@@ -41,7 +41,7 @@ function displayData() {
   // iterate through every row and add it to our page
   users.forEach(function (row) {
     const newListItem = document.createElement("li");
-    newListItem.innerHTML = row["name"] + " " + row["age"] + " " + row["grade"]  + " " + row["city"]  + " " + row["photoPermission"];
+    newListItem.innerHTML = row["first_name"] + " " + row["surname"];
     rowList.appendChild(newListItem);
   });
 }
